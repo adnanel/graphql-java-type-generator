@@ -6,7 +6,7 @@
     <groupId>com.graphql-java</groupId>
     <artifactId>graphql-java-type-generator</artifactId>
     <packaging>jar</packaging>
-    <version>0.10.0</version>
+    <version>0.10.0-SNAPSHOT</version>
     <name>GraphQL Java Type Generator</name>
     <url>https://github.com/danielkwinsor/graphql-java-type-generator</url>
     <licenses>
@@ -38,6 +38,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -131,19 +138,6 @@
                         </manifest>
                     </archive>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.3</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
